@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  background-color: rgb(216, 216, 216);
+}
+
+.btn-darkblue {
+  background-color: rgb(30, 30, 48) !important;
+}
+.container-content {
+  display: flex;
+  height: 93vh;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.blog-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  background-color: white;
+  padding: 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-container .kolom-utama .left-side .right-side {
+  width: 10%;
+}
+
+.kolom-utama {
+  flex: 33.33%;
+  order: 3;
+  padding-top: 20px;
+}
+
+.kolom-utama P {
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.container-content .left-side {
+  flex: 50%;
+  order: 1;
+}
+
+.left-side img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-content .right-side {
+  flex: 33.33%;
+  order: 2;
+  padding-left: 20px;
+}
+
+.duration {
+  margin: 0%;
+}
+.duration div {
+  display: flex;
+  padding-top: 10px;
+}
+
+.teknologi div {
+  display: flex;
+  padding-top: 10px;
+}
+
+.duration p {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+.calender {
+  height: 50px;
+  width: 50px;
+}
+
+.time {
+  height: 50px;
+  width: 50px;
+  display: flex;
+}
+
+img.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.teknologi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+}
+
+.teknologi .java .react .node .type {
+  width: 5%;
+}
+
+.teknologi .java {
+  flex: 50%;
+}
+
+.teknologi .react {
+  flex: 50%;
+}
+
+.teknologi .node {
+  flex: 50%;
+}
+
+.teknologi .type {
+  flex: 50%;
+}
+
+.teknologi h3 {
+  text-align: center;
+  flex: 50%;
+}
+
+.teknologi p {
+  text-align: start;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}

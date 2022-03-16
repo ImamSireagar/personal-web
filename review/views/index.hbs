@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="/public/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="index.js"></script>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand me-5" href="#"><img src="/public/aset/logo.png" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/add-my-project">Add Project</a>
+              </li>
+            </ul>
+              <a href="/contact-me" class="btn btn-darkblue text-white">Contact ME</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section id="home">
+      <div class="container-main">
+        <div class="container-content">
+          <div class="left-side">
+            <div style="border: black 0px solid; border-radius: 5px; width: 400px; box-shadow: 5px 10px 30px #888888; text-align: center">
+              <img src="/public/aset/image.jpg" style="width: 100%; height: 100%\\;" />
+
+              <h2 style="text-align: center; margin: 0; padding: 0; padding-top: 20px">Bachrudin Imam Siregar</h2>
+              <p style="text-align: center; margin-top: 0; padding: 0; padding-bottom: 30px">Fullstack Developer</p>
+            </div>
+          </div>
+
+          <div class="right-side">
+            <h2>What I Do</h2>
+
+            <p>
+              Nama saya adalah Bachrudin Imam Siregar. saya dilahirkan di tangerang dan bertempat tinggal di tangerang selatan. saya sangat tertarik dengan dunia Design dan Web Developer. Sebelum saya mengenal web developer saya adalah
+              seorang Freelance Design Grafis, saya pernah membuat proyek untuk organisasi, internal dan eksternal kampus, wedding, dll. saya mengenal dunia IT khususnya Developing dari teman saya, karena dia seorang android developer yang
+              sudah intermediate dalam bidang tersebut. dan setelah beberapa kali mengerjakan design untuk proyek yang dia terima dari sanalah saya tertarik dengan developing khususnya di bidang android, ui/ux, dan web develop.
+            </p>
+
+            <div class="contact">
+              <div>
+                <a href="contact.html" class="tbl-contact">Contact</a>
+              </div>
+
+              <div>
+                <a href="" class="cv">Download CV</a>
+                <a href=""><img src="/public/aset/icon-download.png" class="download" /></a>
+              </div>
+            </div>
+
+            <br />
+
+            <div class="social-media">
+              <a href="https://www.instagram.com/imam.siregar88/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/login/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/bchrudin-siregar-987465233/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        </section>
+      </div>
+      <hr class="line" />
+
+      <section id="project">
+        
+        <div class="container">
+            <div class="row text-center">
+              <div class="col">
+                <div class="h2 my-4"> MY Project</div>
+              </div>
+            </div>
+            <div class="row">
+              {{#each blogs}}
+                <div class="col-4">
+                <div class="card" style="width: 20rem">
+                  <img src="/public/aset/1.jpg" class="card-img-top" alt="1" />
+                  <div class="card-body">
+                    <h4 class="card-title"><a href="/blog-detail/{{@index}}" target="_blank">{{this.tittle}}</a></h4>
+                    <div class="time-author">{{this.post_at}} | {{this.author}}</div>
+                    <p class="card-text">{{this.content}}</p>
+                    <div class="icon">
+                      <img src="/public/aset2/js.png" />
+                      <img src="/public/aset2/node.png" />
+                      <img src="/public/aset2/react.js.png" />
+                      <img src="/public/aset2/typescript1.png" />
+                    </div>
+                    {{#if isLogin}}
+                      <div class="btn-group">
+                        <a href="#" class="btn-edit">EDIT</a>
+                        <a href="/blog-delete/{{@index}}" class="btn-post">DELETE</a>
+                      </div>
+                    {{/if}}
+                    <div style="text-align: right; color: grey">{{this.duration}}</div>
+                  </div>
+                </div>
+                </div>
+              {{/each}}
+            </div>
+        </div>
+        
+
+      </section>
+      
+    </body>
+  </head>
+</html>

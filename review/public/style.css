@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  background-color: rgb(190, 190, 190);
+}
+
+.btn-darkblue {
+  background-color: rgb(30, 30, 48) !important;
+}
+
+#home {
+  background-color: rgb(190, 190, 190);
+}
+
+.container-main {
+  display: flex;
+  height: 93vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #dddd;
+}
+
+.container-content {
+  width: 80%;
+  display: flex;
+  background-color: white;
+  padding: 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  border-radius: 30px;
+}
+
+.container-content .left-side {
+  flex: 20%;
+  order: 4;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.container-content .right-side {
+  flex: 60%;
+  background-color: white;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.contact {
+  display: flex;
+
+  flex: 1;
+}
+
+.contact div {
+  padding: 10px;
+  margin: 4px;
+}
+
+a.tbl-contact {
+  flex: 20%;
+}
+
+.tbl-contact {
+  background-color: rgb(30, 30, 48);
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px 10px 25px;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+a.cv {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: rgb(108, 110, 110);
+  align-items: center;
+}
+
+img.download {
+  height: 20px;
+  width: 20px;
+}
+
+.social-media i {
+  font-size: 30px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+hr.line {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#project {
+  background-color: white;
+}
+
+.time-author {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  text-align: center !important;
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.btn-edit {
+  background-color: rgb(30, 30, 48);
+  color: rgb(221, 216, 216);
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 60px;
+  font-family: sans-serif;
+  font-weight: 100;
+  flex: 100%;
+}
+
+.icon {
+  margin-right: 150px;
+}
+
+.icon img {
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.icon i {
+  height: 50px;
+  width: 50px;
+  margin-left: 1px;
+  background-color: brown;
+}
+
+.btn-post {
+  background-color: rgb(30, 30, 48);
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 60px;
+  font-family: sans-serif;
+  font-weight: 100;
+  flex: 100%;
+}
+
+.btn-dark {
+  background-color: black;
+  margin: 10px !important;
+  border-radius: 10px !important;
+}
+.time-author {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.card-text {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+/* index.html stop*/
+
+.font {
+  font-family: sans-serif;
+}
+
+.kotak-form {
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+  box-sizing: content-box;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid rgb(206, 206, 206);
+  margin-top: 8px;
+}
+
+.textarea {
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid rgb(206, 206, 206);
+  margin-top: 8px;
+  height: 120px;
+  box-sizing: content-box;
+  resize: none;
+}
